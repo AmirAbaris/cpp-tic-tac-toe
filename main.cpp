@@ -3,6 +3,8 @@
 int main()
 {
   Game game;
+  game.Init();
+  game.DrawBoard();
 
   return 0;
 }
