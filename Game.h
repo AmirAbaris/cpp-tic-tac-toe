@@ -9,9 +9,16 @@ public:
     char board[rows][cols];
     char playerX = 'X';
     char playerO = 'O';
+    char currentPlayer;
 
     void Init();
     void DrawBoard();
+    void MakeMove(int row, int col);
+    bool IsValidMove(int row, int col);
+    void SwitchPlayer();
+    bool CheckWin();
+    bool CheckDraw();
+    void Play();
 };
 
 #endif
